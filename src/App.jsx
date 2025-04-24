@@ -2,16 +2,15 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HomePage } from "./pages/HomePage";
-import { MachinesPage } from "./pages/MachinesPage";
-import { ServicesPage } from "./pages/ServicesPage";
-import { ProcessPage } from "./pages/ProcessPage";
-import { GalleryPage } from "./pages/GalleryPage";
+
 import { Nav } from "./components/Nav";
 import { Bnb } from "./components/Bnb";
 import { NotFoundPage } from "./pages/NotFoundPage";
 import { ButtonResetScroll } from "./components/ButtonResetScroll";
 import { CallRedirect } from "./pages/CallRedirect";
 import ScrollToTop from "./hook/ScrollToTop";
+import { PrintPage } from "./pages/PrintPage";
+import { AnsanPage } from "./pages/AnsanPage";
 
 function App() {
   return (
@@ -22,10 +21,8 @@ function App() {
       </header>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/machines" element={<MachinesPage />} />
-        <Route path="/services" element={<ServicesPage />} />
-        <Route path="/process" element={<ProcessPage />} />
-        <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/print" element={<PrintPage />} />
+        <Route path="/ansan" element={<AnsanPage />} />
         <Route path="/call" element={<CallRedirect />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

@@ -16,7 +16,7 @@ export function Nav() {
         <div className="max-w-[1200px] flex justify-center md:justify-between w-full mx-auto">
           {/* 회사명 */}
           <Link to={"/"}>
-            <p className="text-3xl font-semibold">엄지척배관클리닉</p>
+            <p className="text-3xl font-semibold">안산전단지배포</p>
           </Link>
 
           {/* Mobile menu button */}
@@ -34,23 +34,13 @@ export function Nav() {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/machines" className={({ isActive }) => (isActive ? activeClassName : "")}>
-                장비소개
+              <NavLink to="/ansan" className={({ isActive }) => (isActive ? activeClassName : "")}>
+                안산종합광고
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/services" className={({ isActive }) => (isActive ? activeClassName : "")}>
-                서비스품목
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to="/process" className={({ isActive }) => (isActive ? activeClassName : "")}>
-                서비스절차
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to="/gallery" className={({ isActive }) => (isActive ? activeClassName : "")}>
-                영상&사진
+              <NavLink to="/print" className={({ isActive }) => (isActive ? activeClassName : "")}>
+                전단지인쇄
               </NavLink>
             </li>
           </ul>
@@ -59,31 +49,21 @@ export function Nav() {
 
       {/* Mobile menu - 모바일에서만 상단 고정 */}
       {isMenuOpen && (
-        <div id="mobile-menu" className="md:hidden fixed top-14 h-80 left-0 w-full bg-white shadow-md pb-12 pt-10 z-10 ">
-          <ul className="flex flex-col items-center justify-center gap-4">
+        <div id="mobile-menu" className="md:hidden fixed top-14 h-60 left-0 w-full bg-white shadow-md pb-12 pt-10 z-10 ">
+          <ul className="flex flex-col items-center justify-center gap-6">
             <li className="nav-item py-2">
               <NavLink to="/" className={({ isActive }) => (isActive ? activeClassName : "")} onClick={toggleMenu} end>
                 회사소개
               </NavLink>
             </li>
             <li className="nav-item py-2">
-              <NavLink to="/machines" className={({ isActive }) => (isActive ? activeClassName : "")} onClick={toggleMenu}>
-                장비소개
+              <NavLink to="/ansan" className={({ isActive }) => (isActive ? activeClassName : "")} onClick={toggleMenu}>
+                안산종합광고
               </NavLink>
             </li>
             <li className="nav-item py-2">
-              <NavLink to="/services" className={({ isActive }) => (isActive ? activeClassName : "")} onClick={toggleMenu}>
-                서비스품목
-              </NavLink>
-            </li>
-            <li className="nav-item py-2">
-              <NavLink to="/process" className={({ isActive }) => (isActive ? activeClassName : "")} onClick={toggleMenu}>
-                서비스절차
-              </NavLink>
-            </li>
-            <li className="nav-item py-2">
-              <NavLink to="/gallery" className={({ isActive }) => (isActive ? activeClassName : "")} onClick={toggleMenu}>
-                영상&사진
+              <NavLink to="/print" className={({ isActive }) => (isActive ? activeClassName : "")} onClick={toggleMenu}>
+                전단지인쇄
               </NavLink>
             </li>
           </ul>
