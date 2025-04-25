@@ -20,7 +20,7 @@ export function CallRedirect() {
 
       // 1초 후 전화 앱 실행
       setTimeout(() => {
-        window.location.href = "tel:010-4960-2002";
+        window.location.href = "tel:010-4509-8153";
       }, 1000);
     }
   }, [isMobile]);
