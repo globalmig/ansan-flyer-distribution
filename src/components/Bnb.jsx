@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export function Bnb() {
   return (
-    <div className="flex gap-10 mx-auto w-full max-w-[1200px] justify-center h-[198px] pt-5 mt-10 border-t-2">
+    <div className="flex gap-10 mx-auto w-full max-w-[1200px] justify-center h-[198px] pt-14 my-20  border-t-2">
       <div className="flex flex-col gap-[10px] text-sm mx-4">
         <span className="text-base font-semibold text-gray-900">안산전단지배포</span>
 
