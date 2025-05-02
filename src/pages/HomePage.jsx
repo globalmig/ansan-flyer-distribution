@@ -40,7 +40,7 @@ export function HomePage() {
               {/* 숨겨진 input 필드 추가 */}
               <input type="text" id="copyNumber" value="010-4509-8153" readOnly className="absolute opacity-0" />
               <Link to="/call" onClick={copy} tabIndex="-1">
-                <p className="text-xl md:text-2xl mt-10">전화문의: 010-4509-8153</p>
+                <p className="text-xl md:text-2xl mt-10 font-bold">전화문의: 010-4509-8153</p>
               </Link>
               {/* 숨겨진 input 필드 추가 */}
               <input type="text" id="copyNumber" value="010-4509-8153" readOnly className="absolute opacity-0" />
